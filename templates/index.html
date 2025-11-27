@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS AI CAMERA</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/static/icon.jpg" class="app-icon" alt="App Icon">
+        
+        <h1>AWS AI CAMERA</h1>
+        <p>Object Detection & Voice Analysis</p>
+
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" class="hidden"></canvas>
+        <br>
+        <button id="snap">👁️ SCAN OBJECT</button>
+        <p id="loading">🔄 Analyzing...</p>
+
+        <div id="result_area" class="hidden">
+            <img id="result_img" src="">
+            <div id="result_text"></div>
+            <audio id="audio_player" controls autoplay></audio>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* 全体の設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* メインの白い箱 */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* アプリのアイコン画像 */
+.app-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 22px;
+    box-shadow: 0 8px 16px rgba(0,0,100,0.2);
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+/* タイトルと説明文 */
+h1 {
+    margin-top: 5px;
+    font-size: 28px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* カメラ映像と画像のスタイル */
+video, img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* スキャンボタンのデザイン */
+button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.4);
+    transition: transform 0.1s;
+}
+button:active {
+    transform: scale(0.96); /* 押した時に少し凹む演出 */
+}
+
+/* 読み込み中や非表示の制御 */
+#loading {
+    display: none;
+    color: #764ba2;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+
+/* 診断レポート（黒い背景の文字） */
+#result_text {
+    text-align: left;
+    background-color: #1e1e1e;
+    color: #00ff9d;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Menlo", monospace;
+    white-space: pre-wrap;
+    margin-top: 20px;
+    font-size: 0.85em;
+    line-height: 1.6;
+    border-left: 5px solid #764ba2;
+}
